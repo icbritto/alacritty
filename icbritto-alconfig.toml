@@ -1,0 +1,248 @@
+
+[general]
+
+    #import = [
+    #"~/OneDrive/icbritto-v3/backups/.config/alacritty/icbritto-alconfig.toml",
+    #"~/OneDrive/icbritto-v3/backups/.config/alacritty/alacritty-theme/<theme>",
+    #"~/OneDrive/icbritto-v3/backups/.config/alacritty/alacritty-keybinds.toml"
+    #]
+
+    working_directory = "C:/Users/icbri"
+
+    live_config_reload = true
+
+    # ipc_socket = true | false # (unix only)
+
+#[env]
+
+    #WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+
+    dimensions = { columns = 155, lines = 50 }
+
+    position = { x = 690, y = 150}
+
+    padding = { x = 10, y = 10 }
+
+    #dynamic_padding = true | false
+
+    decorations = "None"
+
+    opacity = 0.95
+
+    #blur = true | false # (works on macOS/KDE Wayland)
+
+    startup_mode = "Windowed"
+
+    #title = "<string>"
+
+    dynamic_title = true
+
+    #class = { instance = "<string>", general = "<string>" } # (Linux/BSD only)
+
+    decorations_theme_variant = "Dark"
+
+    #resize_increments = true | false # (works on macOS/X11)
+
+    #option_as_alt = "OnlyLeft" | "OnlyRight" | "Both" | "None" # (macOS only)
+
+    #level = "Normal" | "AlwaysOnTop"
+
+#[scrolling]
+
+    #history = <integer>
+
+    #multiplier = <integer>
+
+[font]
+
+    #normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+
+    #bold = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+
+    #italic = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+
+    #bold_italic = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+
+    size = 12.0
+
+    #offset = { x = <integer>, y = <integer> }
+
+    #glyph_offset = { x = <integer>, y = <integer> }
+
+    #builtin_box_drawing = true | false
+
+[colors]
+
+    [colors.primary]
+
+        foreground = "#D5D8DA"
+
+        background = "#0b0c0f"
+
+        dim_foreground = "#22252e"
+        
+        bright_foreground = "#3FC4DE"
+
+    [colors.cursor]
+
+        text = "#0B0C0F"
+
+        cursor = "#E95378"
+
+    [colors.vi_mode_cursor]
+
+        text = "#0B0C0F"
+
+        cursor = "#E95378"
+
+    #[colors.search]
+
+        #matches = { foreground = "<string>", background = "<string>" }
+
+        #focused_match = { foreground = "<string>", background = "<string>" }
+
+    #[colors.hints]
+
+        #start = { foreground = "<string>", background = "<string>" }
+
+        #end = { foreground = "<string>", background = "<string>" }
+    
+        #line_indicator = { foreground = "<string>", background = "<string>" }
+
+        #footer_bar = { foreground = "<string>", background = "<string>" }
+
+        #selection = { text = "<string>", background = "<string>" }
+
+    #[colors.normal]
+
+        #black = "<string>"
+
+        #red = "<string>"
+
+        #green = "<string>"
+
+        #yellow = "<string>"
+
+        #blue = "<string>"
+
+        #magenta = "<string>"
+
+        #cyan = "<string>"
+
+        #white = "<string>"
+
+    #[colors.bright]
+
+        #black = "<string>"
+
+        #red = "<string>"
+
+        #green = "<string>"
+
+        #yellow = "<string>"
+
+        #blue = "<string>"
+
+        #magenta = "<string>"
+
+        #cyan = "<string>"
+
+        #white = "<string>"
+
+    #[colors.dim]
+
+        #black = "<string>"
+
+        #red = "<string>"
+
+        #green = "<string>"
+
+        #yellow = "<string>"
+
+        #blue = "<string>"
+
+        #magenta = "<string>"
+
+        #cyan = "<string>"
+
+        #white = "<string>"
+
+    #indexed_colors = [{ index = <integer>, color = "<string>" },]
+
+    #transparent_background_colors = true | false
+
+    #draw_bold_text_with_bright_colors = true | false
+
+#[bell]
+
+    #animation = "Ease" | "EaseOut" | "EaseOutSine" | "EaseOutQuad" | "EaseOutCubic" | "EaseOutQuart" | "EaseOutQuint" | "EaseOutExpo" | "EaseOutCirc" | "Linear"
+
+    #duration = <integer>
+
+    #color = "<string>"
+
+    #command = "<string>" | { program = "<string>", args = ["<string>",] }
+
+[selection]
+
+    #semantic_escape_chars = "<string>"
+
+    save_to_clipboard = true
+
+[cursor]
+
+    style = { shape = "Block", blinking = "Never" }
+
+    #vi_mode_style = { <shape>, <blinking> } | "None"
+
+    #blink_interval = <integer>
+
+    #blink_timeout = <integer>
+
+    unfocused_hollow = true
+
+    #thickness = <float>
+
+[terminal]
+
+    #shell = "<string>" | { program = "<string>", args = ["<string>",] }
+
+    shell = "pwsh"
+
+    osc52 = "CopyPaste"
+
+[mouse]
+
+    hide_when_typing = true
+
+    #bindings = [{ <mouse>, <mods>, <mode>, <command> | <chars> | <action> },]
+
+#[hints]
+
+    #alphabet = "<string>"
+
+    #enabled = [{ <regex>, <hyperlinks>, <post_processing>, <persist>, <action>, <command>, <binding>, <mouse> },]
+
+[keyboard]
+
+    bindings = [
+	    { key = "F", mods = "Control|Shift", action = "ToggleFullscreen" },
+    ]
+
+#[debug]
+
+    #render_timer = true | false
+
+    #persistent_logging = true | false
+
+    #log_level = "Off" | "Error" | "Warn" | "Info" | "Debug" | "Trace"
+
+    #renderer = "glsl3" | "gles2" | "gles2pure" | "None"
+
+    #print_events = true | false
+
+    #highlight_damage = true | false
+
+    #prefer_egl = true | false
