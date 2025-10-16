@@ -229,6 +229,7 @@
 
     bindings = [
 	    { key = "F", mods = "Control|Shift", action = "ToggleFullscreen" },
+        { key = "Enter", mods = "Control", action = "CreateNewWindow"}
     ]
 
 #[debug]
