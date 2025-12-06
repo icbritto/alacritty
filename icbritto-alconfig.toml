@@ -27,7 +27,7 @@
 
     #dynamic_padding = true | false
 
-    decorations = "None"
+    decorations = "Full"
 
     opacity = 0.95
 
